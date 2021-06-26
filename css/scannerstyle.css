@@ -1,0 +1,103 @@
+* {
+margin: 0;
+}
+
+html, body {
+height: 100%;
+}
+
+body {
+color: #fff;
+background: #005866;
+font-family: Helvetica, Arial, sans-serif; font-size: 100%;
+font-weight: 500;
+text-rendering: optimizeLegibility;
+}
+
+h1 {
+color: #fff;
+margin-bottom: 20px;
+}
+
+p {
+font-size: 12px;
+padding-top: 20px;
+}
+
+#center-image {
+border-radius: 50%;
+display: block;
+margin: 0 auto;
+width: 200px;
+height: 200px;
+}
+
+#cf-check {
+display: none;
+}
+
+#flexmad {
+display: -webkit-box;
+display: -ms-flexbox;
+display: flex;
+-webkit-box-orient: vertical;
+-webkit-box-direction: normal;
+-ms-flex-direction: column;
+flex-direction: column;
+-webkit-box-align: center;
+-ms-flex-align: center;
+align-items: center;
+-webkit-box-pack: center;
+-ms-flex-pack: center;
+justify-content: center;
+position: absolute;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+}
+
+@-webkit-keyframes spinner {
+0%, 10% {
+-webkit-transform: rotateY(0deg);
+transform: rotateY(0deg);
+}
+90%, 100% {
+-webkit-transform: rotateY(360deg);
+transform: rotateY(360deg);
+}
+}
+
+@keyframes spinner {
+0%, 10% {
+-webkit-transform: rotateY(0deg);
+transform: rotateY(0deg);
+}
+90%, 100% {
+-webkit-transform: rotateY(360deg);
+transform: rotateY(360deg);
+}
+}
+#center-image {
+-webkit-animation-duration: 1.5s;
+animation-duration: 1.5s;
+-webkit-animation-name: spinner;
+animation-name: spinner;
+-webkit-animation-iteration-count: infinite;
+animation-iteration-count: infinite;
+}
+
+.attribution {
+position: absolute;
+bottom: 0;
+right: 0;
+padding: 2px 5px;
+}
+.attribution a {
+color: #686765;
+font-size: 10px;
+text-decoration: none;
+}
+.attribution a:hover {
+text-decoration: underline;
+}
